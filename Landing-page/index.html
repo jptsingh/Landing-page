@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Manipulating the DOM</title>
+        <!-- Load Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet" />
+        <!-- Load Styles -->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+        <header class="page__header">
+            <nav class="navbar__menu">
+                <!-- Navigation starts as empty UL that will be populated with JS -->
+                <ul id="navbar__list"></ul>
+            </nav>
+        </header>
+        <main>
+            <header class="main__hero">
+                <h1>Breaking News</h1>
+            </header>
+            <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+            <section id="section1" data-nav="Highlights" class="your-active-class">
+                <div class="landing__container">
+                    <h2>Highlights</h2>
+                    <p>COVID-19 Vaccines Work. Here’s the Real-World Proof.</p>
+
+                    <p>
+                        In a study published Feb. 24 in the New England Journal of Medicine, researchers in Israel and the U.S. report that the vaccine made by Pfizer-BioNTech was highly effective in protecting against infection with the
+                        COVID-19 virus, lowering people’s chances of getting sick with the disease—especially severe disease—and dropping COVID-19 hospitalization rates. The data, says Marc Lipsitch, professor of epidemiology at the Harvard
+                        T. H. Chan School of Public Health and co-author of the paper, are “close to the best possible news.”
+                    </p>
+                </div>
+            </section>
+            <section id="section2" data-nav="Domestic">
+                <div class="landing__container">
+                    <h2>Domestic</h2>
+                    <p>What It's Like to Accuse a #MeToo Hero of Abuse</p>
+
+                    <p>
+                        Selvaratnam hesitated before coming forward with allegations of abuse against former New York Attorney General Eric Schneiderman in a 2018 New Yorker story. Schneiderman had built his career, in part, by advocating
+                        for women. He was one of Harvey Weinstein’s fiercest opponents and sued Weinstein’s company to get restitution for survivors. And unlike many of the prominent men felled by the #MeToo movement in late 2017,
+                        Schneiderman’s abuse of Selvaratnam hadn’t taken place in a work context but rather while they were in a relationship.
+                    </p>
+                </div>
+            </section>
+            <section id="section3" data-nav="International">
+                <div class="landing__container">
+                    <h2>International</h2>
+                    <p>Myanmar police and military kill at least 18 people after opening fire on protesters, UN says.</p>
+
+                    <p>
+                        At least 18 people were killed and more than 30 injured in Myanmar on Sunday as police and military forces "confronted peaceful demonstrations," the UN Human Rights Office said. The reported casualties make Sunday
+                        the deadliest day since the military seized power on February 1. As demonstrations against the military coup which ousted the democratically elected government of civilian leader Aung San Suu Kyi entered their fourth
+                        week on Saturday, security forces began a violent crackdown on protesters in towns and cities across the country.
+                    </p>
+                </div>
+            </section>
+            <section id="section4" data-nav="Business">
+                <div class="landing__container">
+                    <h2>Business</h2>
+                    <p>What Australia's new law might mean for the news you see in the future</p>
+
+                    <p>
+                        In Australia, the websites that were previously blocked by Facebook are now accessible and sharable once again. But the battle involving social networks and news is just beginning. This week Australia's government
+                        passed a law this week that offered a glimpse at the future for Facebook and media consumers around the world. The News Media Bargaining Code, passed Wednesday, effectively forces big tech platforms to pay publishers
+                        for news content.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="page__footer">
+            <p>&copy Udacity</p>
+        </footer>
+        <script src="js/app.js"></script>
+    </body>
+</html>
